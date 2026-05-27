@@ -17,7 +17,7 @@ Career choice, earnings, and other key economic outcomes have been linked to gen
 </em>
 </div>
 
-## Working Paper
+## Working Papers
 **Why Don’t Donors Deduct? Social Norms and the Limits of Tax Incentives** (with Michael Hilweg-Waldeck)
 [Draft](/files/papers/Hild_WP.pdf)
 <div style="text-align: justify;">
@@ -26,13 +26,7 @@ Many donors leave tax benefits unclaimed even when doing so requires minimal eff
 </em>
 </div>
 
-
-
-
-<!--  -->
-
-## Selected Works in Progress
-
+<br>
 
 **Inequality as a Constraint on (Repugnant) Markets** (with Jakob Schmidhäuser) [Draft](/files/papers/Repugnance_WP.pdf)
 <div style="text-align: justify;">
@@ -41,10 +35,16 @@ When third parties oppose repugnant transactions, legal bans often prevent welfa
 </em>
 </div>
 
-<br>
 
 
-**Non-Standard Choice and Matching** (with Gian Caspari, Michael Hilweg-Waldeck, Manshu Khanna, Vincent Meisner) [collecting data]
+<!--  -->
+
+## Selected Works in Progress
+
+
+
+
+**Non-Standard Choice and Matching** (with Gian Caspari, Michael Hilweg-Waldeck, Manshu Khanna, Vincent Meisner) [working on the draft]
 <div style="text-align: justify;">
 <em>
 Choice mistakes arise when individuals’ observed choices deviate from their underlying preferences, often due to cognitive overload or complex menus. This project studies such mistakes in matching markets through a controlled laboratory experiment. Participants face real-effort tasks bundled into menus of varying complexity. These are allocated via different assignment mechanisms, including classic serial dictatorship and a novel sequentialized variant. The design allows us to measure when and why mistakes occur and to evaluate how simplifying choice
