@@ -10,11 +10,11 @@
 locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
-name                     : &name "Argun Hild"
+name                     : &name "Paul Ergün Hild"
 description              : &description "personal description"
-url                      : https://argunhild.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://paulhild.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "argunhild/argunhild.github.io"
+repository               : "paulhild/paulhild.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,7 +22,7 @@ repository               : "argunhild/argunhild.github.io"
 author:
   # Biographic information
   avatar           : "picture_1.jpg"
-  name             : "Argun Hild"
+  name             : "Paul Ergün Hild"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. Candidate in Economics"
   location         : "Mannheim, Germany"
