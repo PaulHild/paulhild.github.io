@@ -17,5 +17,6 @@ paul.hild@uni-mannheim.de
 
 Address
 ======
-University of Mannheim, <br> L7 3-5, 4th Floor, <br> 68161, Mannheim, Germany
+Humboldt University of Berlin, <br> Unter den Linden 6, Room 208 <br>
+10099 Berlin, Germany
 
