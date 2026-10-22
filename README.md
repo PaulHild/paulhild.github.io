@@ -1,54 +1,66 @@
-# Getting around
+# paulhild.github.io
 
-1. Navigation buttons: in _data/navigation
-2. to add new pages: 
-    1. create a new .md file in _pages.
-    2. Add them to navigation
-3. To add clickable research articles:
-    1. Create an entry in the Research page
-    2. Create another md article in projects/... and link it just like other projects
+Personal website of Paul Ergün Hild, served by GitHub Pages at <https://paulhild.github.io>.
 
+It is a plain static site: HTML pages, one stylesheet, and a few lines of JavaScript.
+There is no Jekyll build step, so what you see locally is exactly what GitHub Pages serves.
 
+## Preview locally
 
+Double-click **`preview.bat`**, or run:
 
+```
+python preview.py
+```
 
-# Academic Pages
+This serves the site at <http://localhost:8000> and opens your browser. Edits show up when you reload.
+Press Ctrl+C in the window to stop.
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+## Where things are
 
-Academic Pages is a Github Pages template for academic websites.
+| What | File |
+|---|---|
+| Home page: bio, photo, working papers with abstracts, work in progress | `index.html` |
+| Old research URL (redirects to the homepage's research section) | `research/index.html` |
+| CV page | `cv/index.html` (embeds `files/Hild_CV.pdf`) |
+| Contact page | `contact/index.html` |
+| Colors, fonts, spacing | `assets/css/style.css` (the `:root` block at the top) |
+| Paper PDFs | `files/papers/` |
+| Old project pages (kept at their old URLs) | `projects/…/index.html` |
 
+## Common edits
 
-# Getting Started
+**Update the CV:** replace `files/Hild_CV.pdf` (keep the file name).
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+**Update a paper draft:** replace the PDF in `files/papers/` (keep the file name).
 
-See more info at https://academicpages.github.io/
+**Add a working paper:**
+1. Put the PDF in `files/papers/`.
+2. In `index.html`, copy one `<li class="paper" …> … </li>` block, paste it where it belongs,
+   and change the title, coauthors, PDF link, abstract, and the three ids
+   (`id="new-paper"`, `aria-controls="new-paper-abs"`, `id="new-paper-abs"`).
 
-## Running Locally
+**Move a project from "Work in progress" to "Working papers":** cut its block from one list and paste it
+into the other, replacing the status label with a PDF link.
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+**Change the menu:** the header is repeated at the top of each page (`<nav class="site-nav">`).
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Publishing
 
+Commit your changes and push to the `master` branch. GitHub Pages updates the live site within a
+minute or two. The `.nojekyll` file tells GitHub Pages to serve the files as they are.
 
-# Maintenance 
+The previous academicpages/Jekyll version of the site is kept on the `old-site` branch.
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## URLs kept from the old site
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+`/`, `/research/` (redirects to `/#research`, and `/research/#deduct` to `/#deduct`), `/cv/`,
+`/contact/`, `/resume` (redirects to `/cv/`), all `/files/…` PDFs,
+`/projects/032024Why-dont-you-deduct/`, `/projects/17092024Stereotypes/`, and the Google
+verification file.
 
-## Bugfixes and enhancements
+## Note on fonts
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+The fonts (Source Serif 4 and Inter) load from Google Fonts. Some German courts have treated loading
+Google Fonts from Google's servers as a GDPR issue; if that matters to you, the font files can be
+downloaded into `assets/fonts/` and served from the site itself.
