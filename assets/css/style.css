@@ -428,6 +428,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
   font-size: 1.0625rem;
   line-height: 1.72;
   color: var(--text);
+  text-align: justify;
   hyphens: auto;
 }
 .abstract p:last-child { margin-bottom: 0; }
