@@ -422,7 +422,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
 
 .abstract {
   max-width: 78ch;
-  margin-top: 18px;
+  margin: 18px auto 0;
   padding-left: 20px;
   border-left: 2px solid var(--rule);
   font-size: 1.0625rem;
